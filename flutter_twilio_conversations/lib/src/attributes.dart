@@ -13,9 +13,9 @@ class Attributes {
   Attributes(this._type, this._json);
 
   static Attributes fromMap(Map<String, dynamic>? map) {
-    final type =
-        EnumToString.fromString(AttributesType.values, map?['type'] ?? 'null') ??
-            AttributesType.NULL;
+    final type = EnumToString.fromString(
+            AttributesType.values, map?['type'] ?? 'null') ??
+        AttributesType.NULL;
     return Attributes(type, map?['data'] ?? '');
   }
 

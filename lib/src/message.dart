@@ -126,7 +126,7 @@ class Message {
       map['messageIndex'],
       map['hasMedia'],
       MessageMedia.fromMap(map['media']?.cast<String, dynamic>()),
-      Attributes.fromMap(map['attributes'].cast<String, dynamic>()),
+      Attributes.fromMap(map['attributes']?.cast<String, dynamic>()),
     );
     message._updateFromMap(map);
     return message;

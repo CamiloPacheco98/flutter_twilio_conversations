@@ -264,7 +264,6 @@ object Mapper {
                 "lastReadTimestamp" to member.lastReadTimestamp,
                 "channelSid" to member.conversation.sid,
                 "identity" to member.identity,
-                "type" to member.type.toString(),
                 "attributes" to attributesToMap(member.attributes)
         )
     }
